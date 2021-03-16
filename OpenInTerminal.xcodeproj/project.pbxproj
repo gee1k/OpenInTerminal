@@ -8,17 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4725251522680E87003C50DF /* OpenInTerminalCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4725251322680E87003C50DF /* OpenInTerminalCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4725252F22680EE0003C50DF /* TerminalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725252E22680EE0003C50DF /* TerminalManager.swift */; };
 		4725253122680EF3003C50DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725253022680EF3003C50DF /* Constants.swift */; };
-		4725253322680EF9003C50DF /* TerminalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725253222680EF8003C50DF /* TerminalProtocol.swift */; };
 		4725253522680EFD003C50DF /* FinderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725253422680EFD003C50DF /* FinderManager.swift */; };
-		4725253B22680F4B003C50DF /* TerminalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725253822680F4B003C50DF /* TerminalApp.swift */; };
-		4725253C22680F4B003C50DF /* HyperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725253922680F4B003C50DF /* HyperApp.swift */; };
-		4725253D22680F4B003C50DF /* iTermApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725253A22680F4B003C50DF /* iTermApp.swift */; };
 		4725254022680F5A003C50DF /* Terminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725253E22680F5A003C50DF /* Terminal.swift */; };
 		4725254122680F5A003C50DF /* Finder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725253F22680F5A003C50DF /* Finder.swift */; };
 		4725254422680F7C003C50DF /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725254222680F7C003C50DF /* Log.swift */; };
-		4725254522680F7C003C50DF /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725254322680F7C003C50DF /* Error.swift */; };
 		472525592268100F003C50DF /* FinderAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472525572268100F003C50DF /* FinderAssets.xcassets */; };
 		4725255A2268100F003C50DF /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472525582268100F003C50DF /* FinderSync.swift */; };
 		4725256222681098003C50DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725256122681098003C50DF /* AppDelegate.swift */; };
@@ -26,8 +20,6 @@
 		47252586226812AB003C50DF /* OpenInTerminalCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4725251122680E87003C50DF /* OpenInTerminalCore.framework */; };
 		47252587226812AB003C50DF /* OpenInTerminalCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4725251122680E87003C50DF /* OpenInTerminalCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4725258A226812AB003C50DF /* OpenInTerminalFinderExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4725254A22680FEB003C50DF /* OpenInTerminalFinderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		950A4E692271EEC8002A9548 /* AlacrittyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950A4E682271EEC8002A9548 /* AlacrittyApp.swift */; };
-		9511D89522747334008E52B9 /* CoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9511D89422747334008E52B9 /* CoreManager.swift */; };
 		9511D8AC22749582008E52B9 /* LaunchNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9511D8AB22749582008E52B9 /* LaunchNotifier.swift */; };
 		95163CD22269979E007C006F /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95163CD12269979E007C006F /* Notifier.swift */; };
 		95163CD4226998ED007C006F /* OpenNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95163CD3226998ED007C006F /* OpenNotifier.swift */; };
@@ -44,26 +36,31 @@
 		951A3EBF2278A70F00E8DB61 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 951A3EBE2278A70F00E8DB61 /* MainMenu.xib */; };
 		9521EDCC226B475E008445D1 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9521EDCB226B475E008445D1 /* PreferencesViewController.swift */; };
 		9521EDD0226B4BE6008445D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9521EDCF226B4BE6008445D1 /* Constants.swift */; };
-		954EFA932273643C001E101E /* EditorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954EFA922273643C001E101E /* EditorProtocol.swift */; };
-		956BCE1022F80D6C00310B56 /* TextMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956BCE0F22F80D6C00310B56 /* TextMateApp.swift */; };
+		95294CE625B0270700CC995D /* CustomInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95294CE525B0270700CC995D /* CustomInputViewController.swift */; };
+		95294CEB25B3252900CC995D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4725257E2268112F003C50DF /* Assets.xcassets */; };
+		95294CFD25B3293F00CC995D /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95294CFC25B3293F00CC995D /* Icons.xcassets */; };
+		95294CFE25B3293F00CC995D /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95294CFC25B3293F00CC995D /* Icons.xcassets */; };
+		95294D0825B3E17900CC995D /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95294CFC25B3293F00CC995D /* Icons.xcassets */; };
+		954D67CF235570D5007702D0 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D67CE235570D5007702D0 /* Error.swift */; };
+		954D67D12355AD36007702D0 /* ScriptGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954D67D02355AD36007702D0 /* ScriptGenerator.swift */; };
+		954D67D22355F80E007702D0 /* OpenInTerminalCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4725251122680E87003C50DF /* OpenInTerminalCore.framework */; };
+		954D67D32355F80E007702D0 /* OpenInTerminalCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4725251122680E87003C50DF /* OpenInTerminalCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9571DA84227E6FFF0076AA64 /* AdvancedPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9571DA83227E6FFF0076AA64 /* AdvancedPreferencesViewController.swift */; };
-		957B75DF2292358E00E35061 /* VSCodiumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B75DE2292358E00E35061 /* VSCodiumApp.swift */; };
 		9584EDF2226DEF79003C7EE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9584EDF4226DEF79003C7EE8 /* Localizable.strings */; };
 		9590B68E226C04E000362B93 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590B68D226C04E000362B93 /* Defaults.swift */; };
-		9590B691226C6DB000362B93 /* TerminalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590B690226C6DB000362B93 /* TerminalType.swift */; };
-		9590B693226C6DE900362B93 /* EditorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590B692226C6DE900362B93 /* EditorType.swift */; };
-		9590B695226C6E7400362B93 /* EditorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590B694226C6E7400362B93 /* EditorManager.swift */; };
-		9590B697226C6E8600362B93 /* VSCodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590B696226C6E8600362B93 /* VSCodeApp.swift */; };
-		9590B699226C6E9600362B93 /* AtomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590B698226C6E9600362B93 /* AtomApp.swift */; };
-		9590B69B226C6EA200362B93 /* SublimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590B69A226C6EA200362B93 /* SublimeApp.swift */; };
 		9590B69F226CBC0000362B93 /* GeneralPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590B69E226CBC0000362B93 /* GeneralPreferencesViewController.swift */; };
-		9590B6A1226CBC1D00362B93 /* FinderExtensionPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590B6A0226CBC1D00362B93 /* FinderExtensionPreferencesViewController.swift */; };
+		9590B6A1226CBC1D00362B93 /* CustomPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590B6A0226CBC1D00362B93 /* CustomPreferencesViewController.swift */; };
+		9592D637258CB9210031CA30 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592D636258CB9210031CA30 /* AppManager.swift */; };
 		95BAA1822279E28D005E1DAC /* AboutPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BAA1812279E28D005E1DAC /* AboutPreferencesViewController.swift */; };
 		95C6C339227A9EE600F157C4 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C6C33B227A9EE600F157C4 /* Preferences.storyboard */; };
 		95C6C340227AA1CB00F157C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9584EDF4226DEF79003C7EE8 /* Localizable.strings */; };
 		95C6C341227AA1D000F157C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9584EDF4226DEF79003C7EE8 /* Localizable.strings */; };
-		95C6F81C22E37D59001C6374 /* BBEditApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6F81B22E37D59001C6374 /* BBEditApp.swift */; };
-		95E7170C22F1370F000E331A /* VSCodeInsidersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E7170B22F1370F000E331A /* VSCodeInsidersApp.swift */; };
+		95C7C2EE257B7D63004C8355 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C7C2ED257B7D63004C8355 /* App.swift */; };
+		95C7C2F2257B7E1E004C8355 /* SupportedApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C7C2F1257B7E1E004C8355 /* SupportedApps.swift */; };
+		95CE277E257E470F0053D76A /* ScriptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE277D257E470F0053D76A /* ScriptManager.swift */; };
+		95CE2789257F2F3A0053D76A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE2788257F2F3A0053D76A /* Error.swift */; };
+		95DD6296243B211B003550B3 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DD6295243B211B003550B3 /* ArrayExtensions.swift */; };
+		95DFC1242354A2C300941D3A /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DFC1232354A2C300941D3A /* DefaultsManager.swift */; };
 		95F5BED5227734E800D505A0 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F5BED4227734E800D505A0 /* PreferencesWindowController.swift */; };
 		95FC9244228BAD6900F51DF2 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C6C33B227A9EE600F157C4 /* Preferences.storyboard */; };
 		CF7258BBE507C21AABDF27E6 /* Pods_OpenInTerminal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1463FD2DA3F2CBDE5C98A8F7 /* Pods_OpenInTerminal.framework */; };
@@ -83,6 +80,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4725254922680FEB003C50DF;
 			remoteInfo = OpenInTerminalFinderExtension;
+		};
+		954D67D42355F80E007702D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 956C38A9225F7701001CB769 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4725251022680E87003C50DF;
+			remoteInfo = OpenInTerminalCore;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -111,12 +115,23 @@
 		};
 		9511D8B32274A25A008E52B9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = Contents/Library/LoginItems;
 			dstSubfolderSpec = 1;
 			files = (
 				9518739C227DF655000CCB3A /* OpenInTerminalHelper.app in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		954D67D62355F80E007702D0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				954D67D32355F80E007702D0 /* OpenInTerminalCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -126,13 +141,8 @@
 		4725251122680E87003C50DF /* OpenInTerminalCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OpenInTerminalCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4725251322680E87003C50DF /* OpenInTerminalCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenInTerminalCore.h; sourceTree = "<group>"; };
 		4725251422680E87003C50DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4725252E22680EE0003C50DF /* TerminalManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerminalManager.swift; sourceTree = "<group>"; };
 		4725253022680EF3003C50DF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		4725253222680EF8003C50DF /* TerminalProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerminalProtocol.swift; sourceTree = "<group>"; };
 		4725253422680EFD003C50DF /* FinderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinderManager.swift; sourceTree = "<group>"; };
-		4725253822680F4B003C50DF /* TerminalApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerminalApp.swift; sourceTree = "<group>"; };
-		4725253922680F4B003C50DF /* HyperApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HyperApp.swift; sourceTree = "<group>"; };
-		4725253A22680F4B003C50DF /* iTermApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTermApp.swift; sourceTree = "<group>"; };
 		4725253E22680F5A003C50DF /* Terminal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Terminal.swift; sourceTree = "<group>"; };
 		4725253F22680F5A003C50DF /* Finder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Finder.swift; sourceTree = "<group>"; };
 		4725254222680F7C003C50DF /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
@@ -148,8 +158,6 @@
 		4725257E2268112F003C50DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4725257F2268112F003C50DF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BE6A353376D4C2E8A800E17 /* Pods-OpenInTerminal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInTerminal.debug.xcconfig"; path = "Target Support Files/Pods-OpenInTerminal/Pods-OpenInTerminal.debug.xcconfig"; sourceTree = "<group>"; };
-		950A4E682271EEC8002A9548 /* AlacrittyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlacrittyApp.swift; sourceTree = "<group>"; };
-		9511D89422747334008E52B9 /* CoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreManager.swift; sourceTree = "<group>"; };
 		9511D8AB22749582008E52B9 /* LaunchNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchNotifier.swift; sourceTree = "<group>"; };
 		95163CD12269979E007C006F /* Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
 		95163CD3226998ED007C006F /* OpenNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenNotifier.swift; sourceTree = "<group>"; };
@@ -161,37 +169,43 @@
 		95187395227DF493000CCB3A /* OpenInTerminalHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenInTerminalHelper.entitlements; sourceTree = "<group>"; };
 		951A3EBC2278A6F700E8DB61 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		951A3EBE2278A70F00E8DB61 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		951FC31923C624A900A51B50 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Preferences.strings; sourceTree = "<group>"; };
 		9521EDCB226B475E008445D1 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		9521EDCF226B4BE6008445D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		954EFA922273643C001E101E /* EditorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorProtocol.swift; sourceTree = "<group>"; };
+		95294CE525B0270700CC995D /* CustomInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputViewController.swift; sourceTree = "<group>"; };
+		95294CFC25B3293F00CC995D /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		954D67CE235570D5007702D0 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		954D67D02355AD36007702D0 /* ScriptGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptGenerator.swift; sourceTree = "<group>"; };
 		9557D3D42274A78C00CE34FA /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
-		956BCE0F22F80D6C00310B56 /* TextMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMateApp.swift; sourceTree = "<group>"; };
 		9571DA83227E6FFF0076AA64 /* AdvancedPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedPreferencesViewController.swift; sourceTree = "<group>"; };
-		957B75DE2292358E00E35061 /* VSCodiumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSCodiumApp.swift; sourceTree = "<group>"; };
-		957B75E72292C56700E35061 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Preferences.strings; sourceTree = "<group>"; };
 		9584EDF3226DEF79003C7EE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9584EDF5226DEFC0003C7EE8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		958D0D6625BEC9310085EBEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Preferences.strings; sourceTree = "<group>"; };
 		9590B68D226C04E000362B93 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
-		9590B690226C6DB000362B93 /* TerminalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalType.swift; sourceTree = "<group>"; };
-		9590B692226C6DE900362B93 /* EditorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorType.swift; sourceTree = "<group>"; };
-		9590B694226C6E7400362B93 /* EditorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorManager.swift; sourceTree = "<group>"; };
-		9590B696226C6E8600362B93 /* VSCodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSCodeApp.swift; sourceTree = "<group>"; };
-		9590B698226C6E9600362B93 /* AtomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomApp.swift; sourceTree = "<group>"; };
-		9590B69A226C6EA200362B93 /* SublimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SublimeApp.swift; sourceTree = "<group>"; };
 		9590B69E226CBC0000362B93 /* GeneralPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPreferencesViewController.swift; sourceTree = "<group>"; };
-		9590B6A0226CBC1D00362B93 /* FinderExtensionPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderExtensionPreferencesViewController.swift; sourceTree = "<group>"; };
+		9590B6A0226CBC1D00362B93 /* CustomPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPreferencesViewController.swift; sourceTree = "<group>"; };
+		9592D636258CB9210031CA30 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		95BAA1812279E28D005E1DAC /* AboutPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPreferencesViewController.swift; sourceTree = "<group>"; };
 		95C6C33A227A9EE600F157C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Preferences.storyboard; sourceTree = "<group>"; };
-		95C6F81B22E37D59001C6374 /* BBEditApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBEditApp.swift; sourceTree = "<group>"; };
-		95E7170B22F1370F000E331A /* VSCodeInsidersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSCodeInsidersApp.swift; sourceTree = "<group>"; };
-		95E7170E22F18AD2000E331A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Preferences.strings"; sourceTree = "<group>"; };
-		95E7171222F19272000E331A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Preferences.strings; sourceTree = "<group>"; };
+		95C7C2ED257B7D63004C8355 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		95C7C2F1257B7E1E004C8355 /* SupportedApps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedApps.swift; sourceTree = "<group>"; };
+		95CE277D257E470F0053D76A /* ScriptManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptManager.swift; sourceTree = "<group>"; };
+		95CE2788257F2F3A0053D76A /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		95DAC9C425B473D400DB729C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Preferences.strings"; sourceTree = "<group>"; };
+		95DD6295243B211B003550B3 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		95DFC1232354A2C300941D3A /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
 		95F5BED4227734E800D505A0 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		95FC9243228BAAD600F51DF2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C1FB06712493518B004AF7B7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Preferences.strings; sourceTree = "<group>"; };
+		C1FB06722493518B004AF7B7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C3ACD4CF243E0FEF00462517 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Preferences.strings; sourceTree = "<group>"; };
+		C3ACD4D0243E0FEF00462517 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D0C631DF227F862E002C4AA0 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		D0C631E0227F862E002C4AA0 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		D0C631E1227F862E002C4AA0 /* Global.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Global.xcconfig; sourceTree = "<group>"; };
 		DF259B7197D7D4AF21BFC5F5 /* Pods-OpenInTerminal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenInTerminal.release.xcconfig"; path = "Target Support Files/Pods-OpenInTerminal/Pods-OpenInTerminal.release.xcconfig"; sourceTree = "<group>"; };
+		E197D59823E296EB00C5A893 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Preferences.strings; sourceTree = "<group>"; };
+		E197D59A23E2973800C5A893 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				954D67D22355F80E007702D0 /* OpenInTerminalCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,15 +256,18 @@
 		4725251222680E87003C50DF /* OpenInTerminalCore */ = {
 			isa = PBXGroup;
 			children = (
-				9511D89422747334008E52B9 /* CoreManager.swift */,
 				4725253022680EF3003C50DF /* Constants.swift */,
 				9590B68D226C04E000362B93 /* Defaults.swift */,
-				4725254322680F7C003C50DF /* Error.swift */,
+				95DFC1232354A2C300941D3A /* DefaultsManager.swift */,
+				95CE2788257F2F3A0053D76A /* Error.swift */,
 				4725254222680F7C003C50DF /* Log.swift */,
 				4725253422680EFD003C50DF /* FinderManager.swift */,
-				4725253722680F13003C50DF /* Terminals */,
-				9590B68F226C6D5C00362B93 /* Editors */,
+				95C7C2ED257B7D63004C8355 /* App.swift */,
+				9592D636258CB9210031CA30 /* AppManager.swift */,
+				95C7C2F1257B7E1E004C8355 /* SupportedApps.swift */,
+				95CE277D257E470F0053D76A /* ScriptManager.swift */,
 				4725253622680F07003C50DF /* ScriptingBridge */,
+				95DD6294243B2102003550B3 /* Extensions */,
 				4725251322680E87003C50DF /* OpenInTerminalCore.h */,
 				4725251422680E87003C50DF /* Info.plist */,
 			);
@@ -263,20 +281,6 @@
 				4725253E22680F5A003C50DF /* Terminal.swift */,
 			);
 			path = ScriptingBridge;
-			sourceTree = "<group>";
-		};
-		4725253722680F13003C50DF /* Terminals */ = {
-			isa = PBXGroup;
-			children = (
-				4725253222680EF8003C50DF /* TerminalProtocol.swift */,
-				9590B690226C6DB000362B93 /* TerminalType.swift */,
-				4725252E22680EE0003C50DF /* TerminalManager.swift */,
-				4725253822680F4B003C50DF /* TerminalApp.swift */,
-				4725253A22680F4B003C50DF /* iTermApp.swift */,
-				4725253922680F4B003C50DF /* HyperApp.swift */,
-				950A4E682271EEC8002A9548 /* AlacrittyApp.swift */,
-			);
-			path = Terminals;
 			sourceTree = "<group>";
 		};
 		4725254B22680FEB003C50DF /* OpenInTerminalFinderExtension */ = {
@@ -294,9 +298,11 @@
 			isa = PBXGroup;
 			children = (
 				4725256122681098003C50DF /* AppDelegate.swift */,
+				954D67CE235570D5007702D0 /* Error.swift */,
 				9521EDCF226B4BE6008445D1 /* Constants.swift */,
 				951A3EBE2278A70F00E8DB61 /* MainMenu.xib */,
 				951A3EBC2278A6F700E8DB61 /* StatusMenuController.swift */,
+				954D67D02355AD36007702D0 /* ScriptGenerator.swift */,
 				9521EDD1226B4BEF008445D1 /* Notifier */,
 				9521EDC8226B3F41008445D1 /* PreferencesWindow */,
 				9511D8AA22748FD6008E52B9 /* Assets */,
@@ -307,6 +313,7 @@
 		4725258F22681424003C50DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4725254322680F7C003C50DF /* Error.swift */,
 				9557D3D42274A78C00CE34FA /* ServiceManagement.framework */,
 				1463FD2DA3F2CBDE5C98A8F7 /* Pods_OpenInTerminal.framework */,
 			);
@@ -317,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				4725257E2268112F003C50DF /* Assets.xcassets */,
+				95294CFC25B3293F00CC995D /* Icons.xcassets */,
 				4725257F2268112F003C50DF /* Info.plist */,
 				4725257D2268112F003C50DF /* OpenInTerminal.entitlements */,
 				9584EDF4226DEF79003C7EE8 /* Localizable.strings */,
@@ -343,7 +351,8 @@
 				95F5BED4227734E800D505A0 /* PreferencesWindowController.swift */,
 				9521EDCB226B475E008445D1 /* PreferencesViewController.swift */,
 				9590B69E226CBC0000362B93 /* GeneralPreferencesViewController.swift */,
-				9590B6A0226CBC1D00362B93 /* FinderExtensionPreferencesViewController.swift */,
+				9590B6A0226CBC1D00362B93 /* CustomPreferencesViewController.swift */,
+				95294CE525B0270700CC995D /* CustomInputViewController.swift */,
 				9571DA83227E6FFF0076AA64 /* AdvancedPreferencesViewController.swift */,
 				95BAA1812279E28D005E1DAC /* AboutPreferencesViewController.swift */,
 			);
@@ -385,21 +394,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9590B68F226C6D5C00362B93 /* Editors */ = {
+		95DD6294243B2102003550B3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				954EFA922273643C001E101E /* EditorProtocol.swift */,
-				9590B692226C6DE900362B93 /* EditorType.swift */,
-				9590B694226C6E7400362B93 /* EditorManager.swift */,
-				9590B696226C6E8600362B93 /* VSCodeApp.swift */,
-				9590B698226C6E9600362B93 /* AtomApp.swift */,
-				9590B69A226C6EA200362B93 /* SublimeApp.swift */,
-				957B75DE2292358E00E35061 /* VSCodiumApp.swift */,
-				95C6F81B22E37D59001C6374 /* BBEditApp.swift */,
-				95E7170B22F1370F000E331A /* VSCodeInsidersApp.swift */,
-				956BCE0F22F80D6C00310B56 /* TextMateApp.swift */,
+				95DD6295243B211B003550B3 /* ArrayExtensions.swift */,
 			);
-			path = Editors;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D0C631DE227F862E002C4AA0 /* Configuration */ = {
@@ -451,10 +451,12 @@
 				4725254622680FEB003C50DF /* Sources */,
 				4725254722680FEB003C50DF /* Frameworks */,
 				4725254822680FEB003C50DF /* Resources */,
+				954D67D62355F80E007702D0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				954D67D52355F80E007702D0 /* PBXTargetDependency */,
 			);
 			name = OpenInTerminalFinderExtension;
 			productName = OpenInTerminalFinderExtension;
@@ -509,7 +511,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Jianing Wang";
 				TargetAttributes = {
 					4725251022680E87003C50DF = {
@@ -555,6 +557,9 @@
 				Base,
 				"zh-Hans",
 				fr,
+				ru,
+				it,
+				es,
 			);
 			mainGroup = 956C38A8225F7701001CB769;
 			productRefGroup = 956C38B2225F7701001CB769 /* Products */;
@@ -574,6 +579,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95294D0825B3E17900CC995D /* Icons.xcassets in Resources */,
 				95C6C340227AA1CB00F157C4 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,7 +590,9 @@
 			files = (
 				95FC9244228BAD6900F51DF2 /* Preferences.storyboard in Resources */,
 				472525592268100F003C50DF /* FinderAssets.xcassets in Resources */,
+				95294CEB25B3252900CC995D /* Assets.xcassets in Resources */,
 				95C6C341227AA1D000F157C4 /* Localizable.strings in Resources */,
+				95294CFE25B3293F00CC995D /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +604,7 @@
 				951A3EBF2278A70F00E8DB61 /* MainMenu.xib in Resources */,
 				9584EDF2226DEF79003C7EE8 /* Localizable.strings in Resources */,
 				472525812268112F003C50DF /* Assets.xcassets in Resources */,
+				95294CFD25B3293F00CC995D /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,31 +666,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				956BCE1022F80D6C00310B56 /* TextMateApp.swift in Sources */,
-				9511D89522747334008E52B9 /* CoreManager.swift in Sources */,
-				954EFA932273643C001E101E /* EditorProtocol.swift in Sources */,
-				4725252F22680EE0003C50DF /* TerminalManager.swift in Sources */,
-				4725253B22680F4B003C50DF /* TerminalApp.swift in Sources */,
-				95E7170C22F1370F000E331A /* VSCodeInsidersApp.swift in Sources */,
+				95CE277E257E470F0053D76A /* ScriptManager.swift in Sources */,
 				4725254422680F7C003C50DF /* Log.swift in Sources */,
-				4725254522680F7C003C50DF /* Error.swift in Sources */,
-				4725253D22680F4B003C50DF /* iTermApp.swift in Sources */,
 				4725253522680EFD003C50DF /* FinderManager.swift in Sources */,
-				9590B691226C6DB000362B93 /* TerminalType.swift in Sources */,
+				95C7C2EE257B7D63004C8355 /* App.swift in Sources */,
+				95CE2789257F2F3A0053D76A /* Error.swift in Sources */,
 				4725253122680EF3003C50DF /* Constants.swift in Sources */,
+				9592D637258CB9210031CA30 /* AppManager.swift in Sources */,
 				4725254022680F5A003C50DF /* Terminal.swift in Sources */,
-				4725253C22680F4B003C50DF /* HyperApp.swift in Sources */,
-				9590B693226C6DE900362B93 /* EditorType.swift in Sources */,
+				95DD6296243B211B003550B3 /* ArrayExtensions.swift in Sources */,
 				9590B68E226C04E000362B93 /* Defaults.swift in Sources */,
-				4725253322680EF9003C50DF /* TerminalProtocol.swift in Sources */,
-				9590B69B226C6EA200362B93 /* SublimeApp.swift in Sources */,
-				95C6F81C22E37D59001C6374 /* BBEditApp.swift in Sources */,
-				9590B695226C6E7400362B93 /* EditorManager.swift in Sources */,
+				95DFC1242354A2C300941D3A /* DefaultsManager.swift in Sources */,
+				95C7C2F2257B7E1E004C8355 /* SupportedApps.swift in Sources */,
 				4725254122680F5A003C50DF /* Finder.swift in Sources */,
-				9590B697226C6E8600362B93 /* VSCodeApp.swift in Sources */,
-				950A4E692271EEC8002A9548 /* AlacrittyApp.swift in Sources */,
-				9590B699226C6E9600362B93 /* AtomApp.swift in Sources */,
-				957B75DF2292358E00E35061 /* VSCodiumApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,15 +699,18 @@
 				9590B69F226CBC0000362B93 /* GeneralPreferencesViewController.swift in Sources */,
 				4725256222681098003C50DF /* AppDelegate.swift in Sources */,
 				951A3EBD2278A6F700E8DB61 /* StatusMenuController.swift in Sources */,
+				95294CE625B0270700CC995D /* CustomInputViewController.swift in Sources */,
+				954D67CF235570D5007702D0 /* Error.swift in Sources */,
 				95BAA1822279E28D005E1DAC /* AboutPreferencesViewController.swift in Sources */,
 				9511D8AC22749582008E52B9 /* LaunchNotifier.swift in Sources */,
+				954D67D12355AD36007702D0 /* ScriptGenerator.swift in Sources */,
 				9571DA84227E6FFF0076AA64 /* AdvancedPreferencesViewController.swift in Sources */,
 				95163CD22269979E007C006F /* Notifier.swift in Sources */,
 				95163CD4226998ED007C006F /* OpenNotifier.swift in Sources */,
 				9521EDCC226B475E008445D1 /* PreferencesViewController.swift in Sources */,
 				95F5BED5227734E800D505A0 /* PreferencesWindowController.swift in Sources */,
 				9521EDD0226B4BE6008445D1 /* Constants.swift in Sources */,
-				9590B6A1226CBC1D00362B93 /* FinderExtensionPreferencesViewController.swift in Sources */,
+				9590B6A1226CBC1D00362B93 /* CustomPreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,6 +737,11 @@
 			target = 4725254922680FEB003C50DF /* OpenInTerminalFinderExtension */;
 			targetProxy = 4725258B226812AB003C50DF /* PBXContainerItemProxy */;
 		};
+		954D67D52355F80E007702D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4725251022680E87003C50DF /* OpenInTerminalCore */;
+			targetProxy = 954D67D42355F80E007702D0 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -754,6 +759,9 @@
 				9584EDF3226DEF79003C7EE8 /* en */,
 				9584EDF5226DEFC0003C7EE8 /* zh-Hans */,
 				95FC9243228BAAD600F51DF2 /* fr */,
+				E197D59A23E2973800C5A893 /* ru */,
+				C3ACD4D0243E0FEF00462517 /* it */,
+				C1FB06722493518B004AF7B7 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -762,9 +770,12 @@
 			isa = PBXVariantGroup;
 			children = (
 				95C6C33A227A9EE600F157C4 /* Base */,
-				957B75E72292C56700E35061 /* fr */,
-				95E7170E22F18AD2000E331A /* zh-Hans */,
-				95E7171222F19272000E331A /* en */,
+				951FC31923C624A900A51B50 /* fr */,
+				E197D59823E296EB00C5A893 /* ru */,
+				C3ACD4CF243E0FEF00462517 /* it */,
+				C1FB06712493518B004AF7B7 /* es */,
+				95DAC9C425B473D400DB729C /* zh-Hans */,
+				958D0D6625BEC9310085EBEE /* en */,
 			);
 			name = Preferences.storyboard;
 			sourceTree = "<group>";
@@ -780,6 +791,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q33U8R4U57;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -791,8 +803,9 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.OpenInTerminalCore;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 2.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminalCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -806,10 +819,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Q33U8R4U57;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -821,9 +836,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.OpenInTerminalCore;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 2.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminalCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -837,15 +854,18 @@
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = OpenInTerminalFinderExtension/OpenInTerminalFinderExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q33U8R4U57;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenInTerminalFinderExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.OpenInTerminal.OpenInTerminalFinderExtension;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminal.OpenInTerminalFinderExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -859,16 +879,21 @@
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = OpenInTerminalFinderExtension/OpenInTerminalFinderExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q33U8R4U57;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenInTerminalFinderExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.OpenInTerminal.OpenInTerminalFinderExtension;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminal.OpenInTerminalFinderExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -884,15 +909,16 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = C8VX3ZLX5U;
+				DEVELOPMENT_TEAM = Q33U8R4U57;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenInTerminal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 2.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.OpenInTerminal;
+				MARKETING_VERSION = 2.3.3;
+				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -906,18 +932,19 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OpenInTerminal/OpenInTerminal.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = C8VX3ZLX5U;
+				DEVELOPMENT_TEAM = Q33U8R4U57;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenInTerminal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 2.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.OpenInTerminal;
+				MARKETING_VERSION = 2.3.3;
+				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -929,14 +956,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OpenInTerminalHelper/OpenInTerminalHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q33U8R4U57;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenInTerminalHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.OpenInTerminalHelper;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminalHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -948,15 +978,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OpenInTerminalHelper/OpenInTerminalHelper.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q33U8R4U57;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = OpenInTerminalHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.OpenInTerminalHelper;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = wang.jianing.app.OpenInTerminalHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -990,6 +1025,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1052,6 +1088,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

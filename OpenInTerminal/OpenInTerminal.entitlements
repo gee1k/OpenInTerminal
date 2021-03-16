@@ -4,8 +4,10 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.wang.jianing.OpenInTerminal</string>
+		<string>group.wang.jianing.app.OpenInTerminal</string>
 	</array>
+	<key>com.apple.security.automation.apple-events</key>
+	<true/>
 	<key>com.apple.security.temporary-exception.apple-events</key>
 	<array>
 		<string>com.apple.systemevents</string>
@@ -20,6 +22,7 @@
 		<string>com.barebones.bbedit</string>
 		<string>com.microsoft.VSCodeInsiders</string>
 		<string>com.macromates.TextMate</string>
+		<string>net.kovidgoyal.kitty</string>
 	</array>
 </dict>
 </plist>

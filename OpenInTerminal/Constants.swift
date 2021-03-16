@@ -8,17 +8,27 @@
 
 import Cocoa
 import Foundation
+import OpenInTerminalCore
 
 struct Constants {
     
+    struct Id {
+        static let LauncherApp = "wang.jianing.app.OpenInTerminalHelper"
+        static let FinderExtension = "wang.jianing.app.OpenInTerminal.OpenInTerminalFinderExtension"
+        static let CustomAppCell = NSUserInterfaceItemIdentifier(rawValue: "customAppCell")
+        static let CustomMenuCell = NSUserInterfaceItemIdentifier(rawValue: "customMenuCell")
+        static let CustomInputViewController = "CustomInputViewController"
+    }
+    
     static let none = "None"
-    static let launcherAppIdentifier = "wang.jianing.OpenInTerminalHelper"
     
     struct Key {
         static let defaultTerminalShortcut = "OIT_DefaultTerminalShortcut"
         static let defaultEditorShortcut = "OIT_DefaultEditorShortcut"
         static let copyPathShortcut = "OIT_CopyPathShortcut"
     }
+    
+    static let PreferencesStoryboard = NSStoryboard(name: "Preferences", bundle: nil)
 }
 
 extension NSImage {

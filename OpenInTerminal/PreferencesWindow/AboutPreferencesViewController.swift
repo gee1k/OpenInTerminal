@@ -35,17 +35,17 @@ class AboutPreferencesViewController: PreferencesViewController {
     }
     
     @IBAction func paypalButtonClicked(_ sender: NSButton) {
-        guard let url = URL(string: "https://paypal.me/ji4n1ng") else { return }
+        guard let url = URL(string: "https://paypal.me/ji4ning") else { return }
         NSWorkspace.shared.open(url)
     }
     
     @IBAction func alipayButtonClicked(_ sender: NSButton) {
-        guard let url = URL(string: "https://github.com/Ji4n1ng/OpenInTerminal/blob/master/screenshots/Alipay.jpg") else { return }
+        guard let url = URL(string: "https://github.com/Ji4n1ng/OpenInTerminal/blob/master/Resources/Support-Alipay.jpg") else { return }
         NSWorkspace.shared.open(url)
     }
     
     @IBAction func weChatPayButtonClicked(_ sender: NSButton) {
-        guard let url = URL(string: "https://github.com/Ji4n1ng/OpenInTerminal/blob/master/screenshots/WeChatPay.jpg") else { return }
+        guard let url = URL(string: "https://github.com/Ji4n1ng/OpenInTerminal/blob/master/Resources/Support-WeChatPay.jpg") else { return }
         NSWorkspace.shared.open(url)
     }
     

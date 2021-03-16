@@ -11,11 +11,16 @@ import OpenInTerminalCore
 
 do {
     
-    guard let terminalType = TerminalManager.shared.getOrPickDefaultTerminal() else {
-        throw OITLError.cannotGetTerminal
+    if let terminalName = DefaultsManager.shared.liteDefaultTerminal {
+        let terminal = App(name: terminalName, type: .terminal)
+        try terminal.openOutsideSandbox()
+    } else {
+        guard let selectedTerminal = AppManager.shared.pickTerminalAlert() else {
+            throw OITLError.cannotGetTerminal
+        }
+        DefaultsManager.shared.liteDefaultTerminal = selectedTerminal.name
+        try selectedTerminal.openOutsideSandbox()
     }
-    
-    TerminalManager.shared.openTerminal(terminalType)
     
 } catch {
     logw(error.localizedDescription)

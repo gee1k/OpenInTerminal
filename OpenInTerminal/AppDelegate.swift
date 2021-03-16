@@ -13,7 +13,7 @@ import MASShortcut
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    // MARK: Properties
+    // MARK: - Properties
     
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     
@@ -24,24 +24,37 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return storyboard.instantiateInitialController() as? PreferencesWindowController ?? PreferencesWindowController()
     }()
     
-    // MARK: Lifecycle
+    // MARK: - Lifecycle
     
     func applicationDidFinishLaunching(_ notification: Notification) {
-        CoreManager.shared.firstSetup()
+        DefaultsManager.shared.firstSetup()
         addObserver()
         terminateOpenInTerminalHelper()
         setStatusItemIcon()
         setStatusItemVisible()
         setStatusToggle()
         
+        logw("")
+        logw("App launched")
+        logw("macOS \(ProcessInfo().operatingSystemVersionString)")
+        logw("OpenInTerminal Version \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "")")
+        
         // bind global shortcuts
         bindShortcuts()
+        
+        do {
+            // check scripts and install them if needed
+            try checkScripts()
+        } catch {
+            logw(error.localizedDescription)
+        }
     }
     
     func applicationWillTerminate(_ notification: Notification) {
         NSStatusBar.system.removeStatusItem(statusItem)
         
         removeObserver()
+        logw("App terminated")
     }
     
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
@@ -51,11 +64,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         return true
     }
+    
 }
 
 extension AppDelegate {
     
-    // MARK: Status Bar Item
+    // MARK: - Status Bar Item
     
     func setStatusItemIcon() {
         let icon = NSImage(assetIdentifier: .StatusBarIcon)
@@ -66,12 +80,12 @@ extension AppDelegate {
     }
     
     func setStatusItemVisible() {
-        let isHideStatusItem = CoreManager.shared.hideStatusItem.bool
+        let isHideStatusItem = DefaultsManager.shared.isHideStatusItem
         statusItem.isVisible = !isHideStatusItem
     }
     
     func setStatusToggle() {
-        let isQuickToogle = CoreManager.shared.quickToggle.bool
+        let isQuickToogle = DefaultsManager.shared.isQuickToggle
         if isQuickToogle {
             statusItem.menu = nil
             if let button = statusItem.button {
@@ -93,7 +107,7 @@ extension AppDelegate {
             statusItem.button?.performClick(self)
             statusItem.menu = nil
         } else if event.type == .leftMouseUp {
-            if let quickToggleType = CoreManager.shared.quickToggleType {
+            if let quickToggleType = DefaultsManager.shared.quickToggleType {
                 switch quickToggleType {
                 case .openWithDefaultTerminal:
                     openDefaultTerminal()
@@ -108,7 +122,7 @@ extension AppDelegate {
     
     func terminateOpenInTerminalHelper() {
         let isRunning = NSWorkspace.shared.runningApplications.contains {
-            $0.bundleIdentifier == Constants.launcherAppIdentifier
+            $0.bundleIdentifier == Constants.Id.LauncherApp
         }
         
         if isRunning {
@@ -116,7 +130,7 @@ extension AppDelegate {
         }
     }
     
-    // MARK: Notification
+    // MARK: - Notification
     
     func addObserver() {
         OpenNotifier.addObserver(observer: self,
@@ -139,46 +153,88 @@ extension AppDelegate {
     // MARK: Notification Actions
     
     @objc func openDefaultTerminal() {
-        guard let terminalType = TerminalManager.shared.getOrPickDefaultTerminal() else {
-            return
+        var defaultTerminal: App
+        if let terminal = DefaultsManager.shared.defaultTerminal {
+            defaultTerminal = terminal
+        } else {
+            // if there is no defualt terminal, then pick one
+            guard let selectedTerminal = AppManager.shared.pickTerminalAlert() else {
+                return
+            }
+            DefaultsManager.shared.defaultTerminal = selectedTerminal
+            defaultTerminal = selectedTerminal
         }
-        
-        TerminalManager.shared.openTerminal(terminalType)
+        do {
+            try defaultTerminal.openOutsideSandbox()
+        } catch {
+            logw("\(error)")
+        }
     }
     
     @objc func openDefaultEditor() {
-        guard let editorType = EditorManager.shared.getOrPickDefaultEditor() else {
-            return
+        var defaultEditor: App
+        if let editor = DefaultsManager.shared.defaultEditor {
+            defaultEditor = editor
+        } else {
+            // if there is no defualt editor, then pick one
+            guard let selectedEditor = AppManager.shared.pickEditorAlert() else {
+                return
+            }
+            DefaultsManager.shared.defaultEditor = selectedEditor
+            defaultEditor = selectedEditor
         }
-        
-        EditorManager.shared.openEditor(editorType)
+        do {
+            try defaultEditor.openOutsideSandbox()
+        } catch {
+            logw("\(error)")
+        }
     }
     
     @objc func copyPathToClipboard() {
         do {
-            var path = try FinderManager.shared.getFullPathToFrontFinderWindowOrSelectedFile()
-            if path == "" {
+            var urls = try FinderManager.shared.getFullUrlsToFrontFinderWindowOrSelectedFile()
+            if urls.count == 0 {
                 // No Finder window and no file selected.
                 let homePath = NSHomeDirectory()
                 guard let homeUrl = URL(string: homePath) else { return }
-                path = homeUrl.appendingPathComponent("Desktop").path
-            } else {
-                guard let url = URL(string: path) else { return }
-                path = url.path
+                urls.append(homeUrl.appendingPathComponent("Desktop"))
             }
-            
+            let paths = urls.map { $0.path }
+            let pathString = paths.joined(separator: "\n")
             // Set string
             NSPasteboard.general.clearContents()
-            NSPasteboard.general.setString(path, forType: .string)
-            
+            NSPasteboard.general.setString(pathString, forType: .string)
         } catch {
             logw(error.localizedDescription)
         }
     }
+    
+//    func writeimage() {
+//        SupportedApps.allCases.forEach {
+//            let path = "/Applications/\($0.name).app"
+//            guard FileManager.default.fileExists(atPath: path) else { return }
+//
+//            let desktopURL = FileManager.default.urls(for: .desktopDirectory, in: .userDomainMask).first!
+//            let destinationURL = desktopURL.appendingPathComponent("\($0.name).png")
+//            let icon = AppManager.getApplicationIcon(from: path)
+//
+//            guard let tiffRepresentation = icon.tiffRepresentation,
+//                  let bitmapImage = NSBitmapImageRep(data: tiffRepresentation) else { return }
+//            let pngData = bitmapImage.representation(using: .png, properties: [:])
+//            do {
+//                try pngData?.write(to: destinationURL, options: .atomic)
+//            } catch {
+//                print("\($0.name)")
+//                print(error)
+//            }
+//        }
+//    }
 }
 
 extension AppDelegate {
-    // global shortcuts
+    
+    // MARK: - Global Shortcuts
+    
     func bindShortcuts() {
         MASShortcutBinder.shared()?.bindShortcut(withDefaultsKey: Constants.Key.defaultTerminalShortcut) {
             let appDelegate = NSApplication.shared.delegate as! AppDelegate

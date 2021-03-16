@@ -10,6 +10,7 @@
 "general.cancel" = "Cancel";
 "general.yes" = "Yes";
 
+"menu.open_in" = "Open in ";
 "menu.open_with_default_terminal" = "Open in Terminal";
 "menu.open_with_default_editor" = "Open in Editor";
 "menu.copy_path_to_clipboard" = "Copy path";
@@ -30,3 +31,11 @@
 
 "toolbar.item_name" = "Open in Terminal";
 "toolbar.item_tooltip" = "Open current directory in Terminal.";
+
+"pref.custom.menu.installed_supported" = "Installed Supported Apps";
+"pref.custom.menu.all_supported" = "All Supported Apps";
+"pref.custom.menu.running_apps" = "Running Apps";
+"pref.custom.menu.manually_select" = "Manually Select From Finder";
+"pref.custom.menu.manually_input" = "Manually Input";
+
+

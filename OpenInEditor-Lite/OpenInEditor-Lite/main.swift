@@ -11,11 +11,16 @@ import OpenInTerminalCore
 
 do {
     
-    guard let editorType = EditorManager.shared.getOrPickDefaultEditor() else {
-        throw OITLError.cannotGetEditor
+    if let editorName = DefaultsManager.shared.liteDefaultEditor {
+        let editor = App(name: editorName, type: .editor)
+        try editor.openOutsideSandbox()
+    } else {
+        guard let selectedEditor = AppManager.shared.pickEditorAlert() else {
+            throw OITLError.cannotGetEditor
+        }
+        DefaultsManager.shared.liteDefaultEditor = selectedEditor.name
+        try selectedEditor.openOutsideSandbox()
     }
-    
-    EditorManager.shared.openEditor(editorType)
     
 } catch {
     logw(error.localizedDescription)
